@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/bin/launchctl unload /Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist
+
+exit 0

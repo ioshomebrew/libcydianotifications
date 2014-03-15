@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F26F3B18D3DEE0000C7A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F26F3A18D3DEE0000C7A9C /* Foundation.framework */; };
+		84F26F4518D3DEE0000C7A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F26F4418D3DEE0000C7A9C /* main.m */; };
+		84F26F5218D3DF3A000C7A9C /* Notifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F26F5018D3DF3A000C7A9C /* Notifications.h */; };
+		84F26F5318D3DF3A000C7A9C /* Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F26F5118D3DF3A000C7A9C /* Notifications.m */; };
+		84F26F5518D3E050000C7A9C /* CFUserNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F26F5418D3E050000C7A9C /* CFUserNotifications.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84F26F3718D3DEE0000C7A9C /* libcydianotifications */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libcydianotifications; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F26F3A18D3DEE0000C7A9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F26F3F18D3DEE0000C7A9C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		84F26F4018D3DEE0000C7A9C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		84F26F4218D3DEE0000C7A9C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		84F26F4318D3DEE0000C7A9C /* libcydianotifications-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libcydianotifications-Prefix.pch"; sourceTree = "<group>"; };
+		84F26F4418D3DEE0000C7A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F26F4818D3DEE0000C7A9C /* ioshomebrew.libcydianotifications.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ioshomebrew.libcydianotifications.plist; path = Package/Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist; sourceTree = "<group>"; };
+		84F26F4918D3DEE0000C7A9C /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		84F26F4A18D3DEE0000C7A9C /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		84F26F5018D3DF3A000C7A9C /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		84F26F5118D3DF3A000C7A9C /* Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifications.m; sourceTree = "<group>"; };
+		84F26F5418D3E050000C7A9C /* CFUserNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFUserNotifications.h; sourceTree = "<group>"; };
+		84F26F5618D3E0ED000C7A9C /* entitlements.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = entitlements.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F26F3318D3DEE0000C7A9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F26F3B18D3DEE0000C7A9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F26F2D18D3DEE0000C7A9C = {
+			isa = PBXGroup;
+			children = (
+				84F26F5618D3E0ED000C7A9C /* entitlements.xml */,
+				84F26F3C18D3DEE0000C7A9C /* libcydianotifications */,
+				84F26F3918D3DEE0000C7A9C /* Frameworks */,
+				84F26F3818D3DEE0000C7A9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F26F3818D3DEE0000C7A9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F3718D3DEE0000C7A9C /* libcydianotifications */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F26F3918D3DEE0000C7A9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F3A18D3DEE0000C7A9C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F26F3C18D3DEE0000C7A9C /* libcydianotifications */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F4418D3DEE0000C7A9C /* main.m */,
+				84F26F5018D3DF3A000C7A9C /* Notifications.h */,
+				84F26F5418D3E050000C7A9C /* CFUserNotifications.h */,
+				84F26F5118D3DF3A000C7A9C /* Notifications.m */,
+				84F26F3D18D3DEE0000C7A9C /* Package */,
+				84F26F4118D3DEE0000C7A9C /* Supporting Files */,
+			);
+			path = libcydianotifications;
+			sourceTree = "<group>";
+		};
+		84F26F3D18D3DEE0000C7A9C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F3E18D3DEE0000C7A9C /* DEBIAN */,
+				84F26F4618D3DEE0000C7A9C /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		84F26F3E18D3DEE0000C7A9C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F3F18D3DEE0000C7A9C /* control.txt */,
+				84F26F4018D3DEE0000C7A9C /* control */,
+				84F26F4918D3DEE0000C7A9C /* postinst */,
+				84F26F4A18D3DEE0000C7A9C /* prerm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		84F26F4118D3DEE0000C7A9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F4218D3DEE0000C7A9C /* PackageVersion.plist */,
+				84F26F4318D3DEE0000C7A9C /* libcydianotifications-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F26F4618D3DEE0000C7A9C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F4718D3DEE0000C7A9C /* LaunchDaemons */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		84F26F4718D3DEE0000C7A9C /* LaunchDaemons */ = {
+			isa = PBXGroup;
+			children = (
+				84F26F4818D3DEE0000C7A9C /* ioshomebrew.libcydianotifications.plist */,
+			);
+			name = LaunchDaemons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84F26F3418D3DEE0000C7A9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F26F5218D3DF3A000C7A9C /* Notifications.h in Headers */,
+				84F26F5518D3E050000C7A9C /* CFUserNotifications.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84F26F3618D3DEE0000C7A9C /* libcydianotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F26F4D18D3DEE0000C7A9C /* Build configuration list for PBXNativeTarget "libcydianotifications" */;
+			buildPhases = (
+				84F26F3218D3DEE0000C7A9C /* Sources */,
+				84F26F3318D3DEE0000C7A9C /* Frameworks */,
+				84F26F3418D3DEE0000C7A9C /* Headers */,
+				84F26F3518D3DEE0000C7A9C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcydianotifications;
+			productName = libcydianotifications;
+			productReference = 84F26F3718D3DEE0000C7A9C /* libcydianotifications */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F26F2E18D3DEE0000C7A9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 84F26F3118D3DEE0000C7A9C /* Build configuration list for PBXProject "libcydianotifications" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F26F2D18D3DEE0000C7A9C;
+			productRefGroup = 84F26F3818D3DEE0000C7A9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F26F3618D3DEE0000C7A9C /* libcydianotifications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F26F3518D3DEE0000C7A9C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ldid -S entitlements.xml libcydianotifications\n/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F26F3218D3DEE0000C7A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F26F5318D3DF3A000C7A9C /* Notifications.m in Sources */,
+				84F26F4518D3DEE0000C7A9C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F26F4B18D3DEE0000C7A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		84F26F4C18D3DEE0000C7A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		84F26F4E18D3DEE0000C7A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libcydianotifications/libcydianotifications-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		84F26F4F18D3DEE0000C7A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libcydianotifications/libcydianotifications-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F26F3118D3DEE0000C7A9C /* Build configuration list for PBXProject "libcydianotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F26F4B18D3DEE0000C7A9C /* Debug */,
+				84F26F4C18D3DEE0000C7A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F26F4D18D3DEE0000C7A9C /* Build configuration list for PBXNativeTarget "libcydianotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F26F4E18D3DEE0000C7A9C /* Debug */,
+				84F26F4F18D3DEE0000C7A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F26F2E18D3DEE0000C7A9C /* Project object */;
+}

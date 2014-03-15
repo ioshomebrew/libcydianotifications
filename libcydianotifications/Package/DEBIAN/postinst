@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [[ $1 == upgrade ]]; then
+	/bin/launchctl unload /Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist
+fi
+
+chown root:wheel /usr/bin/libcydianotifications
+chmod 755 /usr/bin/libcydianotifications
+chown root:wheel /Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist
+chmod 644 /Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist
+
+/bin/launchctl load /Library/LaunchDaemons/ioshomebrew.libcydianotifications.plist
+
+exit 0
